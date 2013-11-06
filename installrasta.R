@@ -1,0 +1,15 @@
+update.packages(checkBuilt=TRUE, ask = FALSE)
+# set your working directory
+setwd()
+download.file('http://rasta.r-forge.r-project.org/rasta.zip', destfile='rasta.zip')
+install.packages('rasta.zip', 
+                 repos = NULL, dependencies = TRUE)
+install.packages("raster", dependencies=TRUE)
+install.packages("bitops", dependencies=TRUE)
+install.packages("ggplot2", dependencies=TRUE)
+install.packages("spdep", dependencies=TRUE)
+install.packages("randomForest", dependencies=TRUE)
+install.packages("reshape", dependencies=TRUE)
+install.packages("ggmap", dependencies=TRUE)
+install.packages("spatstat", dependencies=TRUE)
+library(rasta)
